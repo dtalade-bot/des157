@@ -1,70 +1,90 @@
-header ul{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    border-top: 2px solid #083073;
-}
-
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
+    background-color: blueviolet;
+    
+    background-image: url("pattern/pattern.jpg");
+    background-size: cover; 
+    background-attachment: fixed; 
+    
+  
 }
 
 h1{
-    font-family: 'Times New Roman', Times, serif;
-    color: #555;
-    background-color: green;
-    text-transform: uppercase;
+    font-family: 'permanent_marker.woff';
 }
 
+		body {
+			color:blue;
+			font-family: Arial;
+		}
+		p{
+            max-width: 800px;
+			line-height: 2em;
+		}
+		section p {
+			color: orange;
+		}
+        article
+        {
+            width: 700px;
+            margin: 700px;
+            background-color: aliceblue;
+            padding-top: 50px;
+        }
+        body{
+            font-family: 'Orbitron', Ubuntu, serif;
+            line-height: 1.5mm;
+            color:#898282;
 
-header, footer{
-    text-align: center;
-    padding: 40px 0 40px 0;
-    background: #dadada;
-}
+        }
 
-nav ul{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    border-top: 2px solid #083073;
-}
-p{
-	display: block;
-	background: #d1ab23;
-	padding: 20px 10px;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	color: #fff;
-	font-weight: bold;
-	border-bottom: 2px solid #083073;
-}
-
-main{
-    background-color: #f2f2f2;
-    padding: 20px;
-}
-
-@media only screen and (min-width: 600px) {
-	
-	header, footer, #container {
-    max-width: 1020px;
-    margin: auto;
-}
-#container {
-    display: flex;
-}
-nav {
-    flex: 1;
-    background-color: #F7E5A3;
-}
-main {
-    flex: 2;
-}
-	
-}
-
-
+        h1{
+            font-family: Orbitron;
+            background-color: blue;
+            padding: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            color:black;
+            border-radius: 10px;
+        }
+        h2{
+            color:firebrick;
+            padding-bottom: 10px;
+            border-bottom: 5px dotted blue;
+            text-transform: uppercase;
+            background-color: #ccc;
+            border-radius: 10px;
+        }
+        h1,h2{
+            font-family: Ubuntu;
+            color: #62D058;
+            border-bottom: 3px solid red;
+        }
+        section{
+            padding: 50px;
+        }
+         .introduction{
+            padding: 50px;
+            font-size: 1.8em;
+            line-height: 2.4em;
+         }
+         nav ul {
+            list-style-type: none;
+         }
+         nav ul li a{
+            text-decoration: none;
+            font-family: arial;
+            font-weight: bold;
+            color: indianred;
+            border: 2px solid #333;
+            padding: 20px;
+            display: block;
+            margin-bottom: 20px;
+            background-color: #bce3be;
+            border-radius: 5px;
+         }
+         nav ul li a:hover{
+            background-color: yellow;
+            text-transform: uppercase;
+            text-align: center;
+         }
