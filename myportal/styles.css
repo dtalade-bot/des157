@@ -1,0 +1,145 @@
+header ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-top: 2px solid #083073;
+}
+
+ul{
+      display: flex;
+  flex-direction: column; /* Keeps it a vertical list */
+  gap: 12px; 
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #555;
+    background-color: green;
+    text-transform: uppercase;
+}
+
+
+header, footer{
+    text-align: center;
+    padding: 40px 0 40px 0;
+    background: #dadada;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-top: 2px solid #083073;
+}
+p{
+	display: block;
+	background: #d1ab23;
+	padding: 20px 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	border-bottom: 2px solid #083073;
+}
+
+main{
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+	
+	header, footer, #container {
+    max-width: 1020px;
+    margin: auto;
+}
+#container {
+    display: flex;
+}
+nav {
+    flex: 1;
+    background-color: #F7E5A3;
+}
+main {
+    flex: 2;
+}
+	
+}
+
+
+header ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-top: 2px solid #083073;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #555;
+    background-color: green;
+    text-transform: uppercase;
+}
+
+
+header, footer{
+    text-align: center;
+    padding: 40px 0 40px 0;
+    background: #dadada;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-top: 2px solid #083073;
+}
+p{
+	display: block;
+	background: #d1ab23;
+	padding: 20px 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	border-bottom: 2px solid #083073;
+}
+
+main{
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+	
+	header, footer, #container {
+    max-width: 1020px;
+    margin: auto;
+}
+#container {
+    display: flex;
+}
+nav {
+    flex: 1;
+    background-color: #F7E5A3;
+}
+main {
+    flex: 2;
+}
+	
+}
+
+

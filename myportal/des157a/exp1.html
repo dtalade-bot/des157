@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Experiment 1</h1>
+
+     
+  <select id="trait">
+    <option value="attack">Attack Power</option>
+    <option value="defense">Defense Power</option>
+    <option value="special">Special Power</option>
+
+  </select>
+  
+
+  <script>
+    trait = firstOptionTrait;
+
+if (secondOptionTrait < preferredOptionTrait)
+{
+trait = secondOptionTrait;
+}
+
+else 
+{
+preferredOptionTrait= firstOptionTrait;
+}
+
+if (thirdOptionTrait< preferredOptionTrait)
+{
+preferredOptionTrait= thirdOptionTrait;
+}
+
+else
+{
+null;
+}
+
+
+
+trait = [defense, attack, special];
+
+preferredOptionTrait=defense;
+
+
+
+for (myTrait of trait){
+
+if (myTrait< preferredOptionTrait)
+{
+ preferredOptionTrait=myTrait;
+}
+else{
+preferredOptionTrait=defense;
+}
+}
+  </script>
+
+</body>
+</html>
