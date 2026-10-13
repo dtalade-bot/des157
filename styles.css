@@ -149,3 +149,20 @@ main {
 	
 }
 
+/* Animation: slide in from the left */
+@keyframes slide-in {
+    from {
+        transform: translateX(-150px) rotate(45deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0) rotate(45deg);
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the red square */
+#ex1.box {
+    animation: slide-in 1s ease-out;
+}
