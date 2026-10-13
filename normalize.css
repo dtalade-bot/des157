@@ -427,7 +427,7 @@ th {
 }
 
 /* Base Banner Container */
-.interactive-banner {
+#banner {
   position: relative;
   width: 100%;
   max-width: 800px;
@@ -443,13 +443,15 @@ th {
   font-family: system-ui, -apple-system, sans-serif;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  
+}
+#banner-scale {
   /* TRANSITION: Smoothly blends the whole banner's scale & shadow change on hover */
+  transform: scale(2) translate(200px, 100px);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 /* 1. KEYFRAME ANIMATION: Ambient background drift */
-.banner-bg-glow {
+#banner-bg-glow {
   position: absolute;
   top: -50%;
   left: -50%;
@@ -469,7 +471,7 @@ th {
 }
 
 /* Content Wrapper */
-.banner-content {
+#banner-content {
   position: relative;
   z-index: 2;
   max-width: 500px;
@@ -477,7 +479,7 @@ th {
 }
 
 /* 2. TRANSFORMS & KEYFRAMES: Floating micro-badge */
-.banner-badge {
+#banner-badge {
   display: inline-block;
   background: linear-gradient(135deg, #6366f1, #a855f7);
   padding: 0.4rem 0.8rem;
@@ -498,21 +500,21 @@ th {
 }
 
 
-.banner-title {
+#banner-title {
   font-size: 2.25rem;
   font-weight: 800;
   margin: 0 0 0.5rem 0;
   background: linear-gradient(to right, #ffffff, #e2e8f0);
 }
 
-.banner-text {
+#banner-text {
   font-size: 1rem;
   color: #94a3b8;
   margin: 0 0 1.5rem 0;
   line-height: 1.5;
 }
 
-.banner-btn {
+#banner-btn {
   background-color: #ffffff;
   color: #0f172a;
   border: none;
@@ -526,12 +528,12 @@ th {
 }
 
 
-.banner-btn:hover {
+#banner-btn:hover {
   background-color: #f8fafc;
   transform: scale(1.06);
 }
 
-.banner-btn:active {
+#banner-btn:active {
   transform: scale(0.96);
 }
 
@@ -542,16 +544,16 @@ th {
 }
 
 
-.interactive-banner, .banner-bg-glow, .banner-badge, .banner-btn {
+.interactive-banner, #banner-bg-glow, #banner-badge, #banner-btn {
   will-change: transform;
 }
 
 
 @media (prefers-reduced-motion: reduce) {
-  .banner-bg-glow, .banner-badge {
+  #banner-bg-glow, #banner-badge {
     animation: none;
   }
-  .interactive-banner:hover, .banner-btn:hover {
+  .interactive-banner:hover, #banner-btn:hover {
     transform: none;
   }
 }
