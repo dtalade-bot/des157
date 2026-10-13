@@ -23,6 +23,30 @@ body{
     margin: 50px;
 }
 
+#ex2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(21, 255, 0);
+    transform: rotate(45deg);
+    margin: 50px;
+}
+
+#ex3 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(17, 0, 255);
+    transform: rotate(45deg);
+    margin: 50px;
+}
+
+#ex4 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(229, 255, 0);
+    transform: rotate(45deg);
+    margin: 50px;
+}
+
 h1{
     font-family: 'Times New Roman', Times, serif;
     color: #555;
@@ -149,20 +173,62 @@ main {
 	
 }
 
-/* Animation: slide in from the left */
-@keyframes slide-in {
-    from {
-        transform: translateX(-150px) rotate(45deg);
-        opacity: 0;
-    }
 
-    to {
-        transform: translateX(0) rotate(45deg);
-        opacity: 1;
-    }
+
+/* Rotate the square when the mouse hovers over it */
+#ex1:hover {
+    transform: rotate(405deg);
+    transition: transform 0.6s ease;
 }
 
-/* Apply the animation to the red square */
-#ex1.box {
-    animation: slide-in 1s ease-out;
+/* Smoothly return to the original rotation */
+#ex1 {
+    transition: transform 0.6s ease;
+}
+
+#ex1:hover {
+    rotate: 360deg;
+}
+
+
+#ex2:hover {
+    transform: rotate(405deg);
+    transition: transform 0.6s ease;
+}
+
+
+#ex2 {
+    transition: transform 0.6s ease;
+}
+
+#ex2:hover {
+    rotate: 360deg;
+}
+
+
+#ex3:hover {
+    transform: rotate(405deg);
+    transition: transform 0.6s ease;
+}
+
+
+#ex3 {
+    transition: transform 0.6s ease;
+}
+
+#ex3:hover {
+    rotate: 360deg;
+}
+
+#ex4:hover {
+    transform: rotate(405deg);
+    transition: transform 0.6s ease;
+}
+
+#ex4 {
+    transition: transform 0.6s ease;
+}
+
+#ex4:hover {
+    rotate: 360deg;
 }
