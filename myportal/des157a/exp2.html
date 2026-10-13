@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+<body>
+    <h1>Capitalize Every Other Line</h1>
+ <script>
+        /* This program capitalizes every other 
+         letter in a string, first letter first.*/
+
+        function capitalizeEveryOther(str) {
+            var result = "";
+
+            // LOOP: Go through each character in the string.
+            for (var i = 0; i < str.length; i++) {
+
+                // SELECTION: Check whether the character's index is even or odd.
+                if (i % 2 == 0) {
+                    result += str[i].toUpperCase();
+                } else {
+                    result += str[i].toLowerCase();
+                }
+            }
+
+            /* SEQUENCE: Return the completed string 
+            after processing all characters. */
+            return result;
+        }
+
+        var userString = prompt("Enter a word or sentence:");
+
+        console.log(capitalizeEveryOther(userString));
+    </script>
+</body>
+</html>
