@@ -60,5 +60,33 @@ preferredOptionTrait=defense;
 }
   </script>
 
+<h2>Capitalize Every Other Line</h2>
+ <script>
+        /* This program capitalizes every other 
+         letter in a string, first letter first.*/
+
+        function capitalizeEveryOther(str) {
+            var result = "";
+
+            // LOOP: Go through each character in the string.
+            for (var i = 0; i < str.length; i++) {
+
+                // SELECTION: Check whether the character's index is even or odd.
+                if (i % 2 == 0) {
+                    result += str[i].toUpperCase();
+                } else {
+                    result += str[i].toLowerCase();
+                }
+            }
+
+            /* SEQUENCE: Return the completed string 
+            after processing all characters. */
+            return result;
+        }
+
+        var userString = prompt("Enter a word or sentence:");
+
+        console.log(capitalizeEveryOther(userString));
+    </script>
 </body>
 </html>
