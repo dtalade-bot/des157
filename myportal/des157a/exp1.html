@@ -20,9 +20,12 @@
   <script>
     trait = firstOptionTrait;
 
+    var power= trait
+
+
 if (secondOptionTrait < preferredOptionTrait)
 {
-trait = secondOptionTrait;
+trait = preferredOptionTrait;
 }
 
 else 
@@ -40,7 +43,7 @@ else
 null;
 }
 
-
+document.querySelector();
 
 trait = [defense, attack, special];
 
@@ -48,16 +51,16 @@ preferredOptionTrait=defense;
 
 
 
-for (myTrait of trait){
+    for (myTrait of trait){
 
-if (myTrait< preferredOptionTrait)
-{
- preferredOptionTrait=myTrait;
-}
-else{
-preferredOptionTrait=defense;
-}
-}
+    if (myTrait< preferredOptionTrait)
+    {
+    preferredOptionTrait=myTrait;
+    }
+    else{
+    preferredOptionTrait=defense;
+    }
+    }
   </script>
 
 
