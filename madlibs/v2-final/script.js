@@ -6,7 +6,7 @@
 const form = document.querySelector("form");
 const storySection = document.querySelector(".story-preview");
 const storyArticle = storySection.querySelector("article");
-const storyText = document.querySelector("#story-text");
+
 
 // Store the IDs of all input fields
 const inputIds = ["adjective", "adjective2 ", "verb", "place", "object", "name", "name2", "name3", "name4",];
@@ -51,7 +51,7 @@ form.addEventListener("submit", function (event) {
     // Create the story paragraph
     const story = document.createElement("p");
 
-    storyText.textContent= `The ${answers.adjective} Room. A place that only existed between ` +
+    storyText.text( `The ${answers.adjective} Room. A place that only existed between ` +
             `${answers.place} and reality, mind and ${answers.adjective2}. ` +
             `Its color was very evident, as were the objects of its ` +
             `${answers.adjective} inhabitants. ${answers.name} was out that day. ` +
@@ -60,13 +60,13 @@ form.addEventListener("submit", function (event) {
             `having devoted herself to ${answers.verb}. She had brought along ` +
             `${answers.name4}, who had gone without objection. He did not understand ` +
             `the value of ${answers.object}, but ${answers.name2} and ${answers.name3} ` +
-            `apparently found some value in it.`;
-
-    
+            `apparently found some value in it.`);
 
     // Replace the sample story with the new story
     storyArticle.replaceWith(story);
 
+    // Hide the original note
+    storyNote.hidden = true;
 
  
     // Scroll to the finished story
