@@ -1,0 +1,149 @@
+/* General page styles */
+body {
+    background: #f3efff;
+    color: #30264a;
+    font-family: "Nunito", sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header and footer */
+header,
+footer {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+h1,
+h2 {
+    font-family: "Fredoka", sans-serif;
+}
+
+h1 {
+    color: #7546c8;
+    font-size: 2.8rem;
+    margin-bottom: 0;
+}
+
+header p {
+    margin-top: 5px;
+}
+
+/* Main content */
+main {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+section {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 5px 15px rgba(65, 40, 100, 0.1);
+}
+
+h2 {
+    color: #7546c8;
+    margin-top: 0;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+input[type="text"] {
+    font: inherit;
+    padding: 12px;
+    border: 2px solid #d9ccef;
+    border-radius: 9px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: #7546c8;
+    outline: 2px dashed #b49ae5;
+    outline-offset: 3px;
+    box-shadow: 0 4px 10px rgba(117, 70, 200, 0.15);
+}
+
+/* Submit button */
+input[type="submit"] {
+    background: #7546c8;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 800;
+    padding: 14px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background: #5d32a7;
+    transform: translateY(-2px);
+}
+
+input[type="submit"]:focus-visible {
+    outline: 3px dashed #30264a;
+    outline-offset: 4px;
+}
+
+/* Story preview */
+.story-preview {
+    background: #fff8dc;
+    border: 2px dashed #e4bd58;
+}
+
+.story-preview strong {
+    color: #7546c8;
+    font-weight: 800;
+}
+
+.story-note {
+    color: #6d617d;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Generated story feedback */
+.story-preview article {
+    animation: appear 0.5s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile layout */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    section {
+        padding: 18px;
+    }
+}
