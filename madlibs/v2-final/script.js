@@ -6,7 +6,6 @@
 const form = document.querySelector("form");
 const storySection = document.querySelector(".story-preview");
 const storyArticle = storySection.querySelector("article");
-const storyNote = storySection.querySelector(".story-note");
 const storyText = document.querySelector("#story-text");
 
 // Store the IDs of all input fields
@@ -52,18 +51,22 @@ form.addEventListener("submit", function (event) {
     // Create the story paragraph
     const story = document.createElement("p");
 
-    story.append( createWord(adjective),
- "Room. A place that only existed between ",  createWord(place), "and reality, mind and ", createWord(place), "It's ", createWord(adjective), "color was",
-"very evident, as were the ", createWord(object), "s of its ",createWord(adjective), "inhabitants. ",createWord(name), "was out that day, and thus was not in the room. ",createWord(name2), "sat in her usual seat, and across from her sat", createWord(name3). createWord(name3), " did not spend much time in the room, having devoted herself to ",createWord(verb), ", but she occasionally visited whenever she felt like it, today being one of those times. She had brought along ",createWord(name4), ", who had went without objection. He really did not understand the value of", createWord(place), ", but ", createWord(name2), "and ",createWord(name3),
-" apparently found some value in it, and he wished to discover what it was,"
+    storyText.textContent= `The ${answers.adjective} Room. A place that only existed between ` +
+            `${answers.place} and reality, mind and ${answers.adjective2}. ` +
+            `Its color was very evident, as were the objects of its ` +
+            `${answers.adjective} inhabitants. ${answers.name} was out that day. ` +
+            `${answers.name2} sat in her usual seat, and across from her sat ` +
+            `${answers.name3}. ${answers.name3} did not spend much time in the room, ` +
+            `having devoted herself to ${answers.verb}. She had brought along ` +
+            `${answers.name4}, who had gone without objection. He did not understand ` +
+            `the value of ${answers.object}, but ${answers.name2} and ${answers.name3} ` +
+            `apparently found some value in it.`;
 
-    );
+    
 
     // Replace the sample story with the new story
     storyArticle.replaceWith(story);
 
-    // Hide the original note
-    storyNote.hidden = true;
 
  
     // Scroll to the finished story
