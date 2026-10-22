@@ -7,6 +7,7 @@ const form = document.querySelector("form");
 const storySection = document.querySelector(".story-preview");
 const storyArticle = storySection.querySelector("article");
 const storyNote = storySection.querySelector(".story-note");
+const storyText = document.querySelector("#story-text");
 
 // Store the IDs of all input fields
 const inputIds = ["adjective", "adjective2 ", "verb", "place", "object", "name", "name2", "name3", "name4",];
@@ -25,7 +26,7 @@ form.addEventListener("submit", function (event) {
 
         // Selection: check whether an answer is empty
         if (answer === "") {
-            alert("Please fill in all six blanks!");
+            alert("Please fill in all the blanks!");
             input.focus();
             return;
         } else {
