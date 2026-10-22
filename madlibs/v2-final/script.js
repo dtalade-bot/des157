@@ -1,6 +1,6 @@
 (function () {
      "use strict";
-     console.log("reading js");
+     //console.log("reading js");
      // your code starts here
 
 const form = document.querySelector("form");
