@@ -1,11 +1,12 @@
 (function () {
      "use strict";
-     //console.log("reading js");
+     console.log("reading js");
      // your code starts here
 
 const form = document.querySelector("form");
 const storySection = document.querySelector(".story-preview");
 const storyArticle = storySection.querySelector("article");
+const storyText = document.querySelector("#storytext");
 
 
 // Store the IDs of all input fields
@@ -63,7 +64,7 @@ form.addEventListener("submit", function (event) {
             `apparently found some value in it.`);
 
     // Replace the sample story with the new story
-    storyArticle.replaceWith(story);
+    storyArticle.replaceWith(storyText);
 
     // Hide the original note
     storyNote.hidden = true;
