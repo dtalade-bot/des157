@@ -47,22 +47,16 @@ form.addEventListener("submit", function (event) {
     // Create the story paragraph
     const story = document.createElement("p");
 
-    storyText.text( `The ${answers.adjective} Room. A place that only existed between ` +
-            `${answers.place} and reality, mind and ${answers.adjective2}. ` +
+    storyText.textContent = `The ${adjective} Room. A place that only existed between ` +
+            `${place} and reality, mind and ${adjective2}. ` +
             `Its color was very evident, as were the objects of its ` +
-            `${answers.adjective} inhabitants. ${answers.name} was out that day. ` +
-            `${answers.name2} sat in her usual seat, and across from her sat ` +
-            `${answers.name3}. ${answers.name3} did not spend much time in the room, ` +
-            `having devoted herself to ${answers.verb}. She had brought along ` +
-            `${answers.name4}, who had gone without objection. He did not understand ` +
-            `the value of ${answers.object}, but ${answers.name2} and ${answers.name3} ` +
-            `apparently found some value in it.`);
-
-    // Replace the sample story with the new story
-    storyArticle.replaceWith(storyText);
-
-    // Hide the original note
-    storyNote.hidden = true;
+            `${adjective} inhabitants. ${name} was out that day. ` +
+            `${name2} sat in her usual seat, and across from her sat ` +
+            `${name3}. ${name3} did not spend much time in the room, ` +
+            `having devoted herself to ${verb}. She had brought along ` +
+            `${name4}, who had gone without objection. He did not understand ` +
+            `the value of ${object}, but ${name2} and ${name3} ` +
+            `apparently found some value in it.`;
 
  
     // Scroll to the finished story
