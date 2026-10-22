@@ -47,6 +47,8 @@ form.addEventListener("submit", function (event) {
     // Create the story paragraph
     const story = document.createElement("p");
 
+    console.log(document.getElementById("storytext"));
+
     storyText.textContent = `The ${adjective} Room. A place that only existed between ` +
             `${place} and reality, mind and ${adjective2}. ` +
             `Its color was very evident, as were the objects of its ` +
