@@ -10,7 +10,7 @@ const storyText = document.getElementById("storytext");
 
 
 // Store the IDs of all input fields
-const inputIds = ["adjective", "adjective2 ", "verb", "place", "object", "name", "name2", "name3", "name4",];
+const inputIds = ["adjective", "adjective2", "verb", "place", "object", "name", "name2", "name3", "name4",];
 
 form.addEventListener("submit", function (event) {
     // Prevent the page from refreshing
@@ -20,13 +20,17 @@ form.addEventListener("submit", function (event) {
     const answers = [];
 
 
-    ;
-
 
     // Use a for loop to collect each answer
-    for (let i = 0; i < inputIds.length; i++) {
-        const input = document.querySelector("#" + inputIds[i]);
-        const answer = input.value.trim();
+ for (const id of inputIds) {
+            const input = document.getElementById(id);
+
+            if (!input) {
+                console.error(`Could not find an input with id="${id}".`);
+                return;
+            }
+
+            const answer = input.value.trim();
 
         // Selection: check whether an answer is empty
         if (answer === "") {
@@ -38,16 +42,7 @@ form.addEventListener("submit", function (event) {
         }
     }
 
-    // Give each answer a variable name
-    const adjective = answers[0];
-    const adjective2 = answers[1];
-    const verb = answers[2];
-    const place = answers[3];
-    const name2 = answers[4];
-    const object = answers[5];
-    const name3 = answers[6];
-    const name = answers[7];
-    const name4 = answers[8];
+     const [adjective, adjective2, verb, place, object, name, name2, name3, name4] = answers;
 
     // Create the story paragraph
     const story = document.createElement("p");
