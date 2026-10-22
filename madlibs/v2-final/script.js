@@ -6,7 +6,7 @@
 const form = document.querySelector("form");
 const storySection = document.querySelector(".story-preview");
 const storyArticle = storySection.querySelector("article");
-const storyText = document.querySelector("#storytext");
+const storyText = document.getElementById("storytext");
 
 
 // Store the IDs of all input fields
