@@ -19,6 +19,10 @@ form.addEventListener("submit", function (event) {
     // Store the user's answers
     const answers = [];
 
+
+    ;
+
+
     // Use a for loop to collect each answer
     for (let i = 0; i < inputIds.length; i++) {
         const input = document.querySelector("#" + inputIds[i]);
@@ -56,7 +60,7 @@ form.addEventListener("submit", function (event) {
     );
 
     // Replace the sample story with the new story
-    storyArticle.replaceChildren(story);
+    storyArticle.replaceWith(story);
 
     // Hide the original note
     storyNote.hidden = true;
